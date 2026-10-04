@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PTO Balance Lookup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>PTO Balance Lookup</h1>
+      <p class="sub">Available vacation per the Employee Handbook, assuming no leave has been taken.</p>
+    </header>
+
+    <form id="pto-form">
+      <label for="employee-id" class="visually-hidden">Employee ID</label>
+      <input id="employee-id" type="text" placeholder="Employee ID, e.g. E1001" autocomplete="off"
+             maxlength="32" pattern="[A-Za-z0-9][A-Za-z0-9_\-]{0,31}" required>
+      <button type="submit" id="lookup" class="primary">Look up</button>
+    </form>
+    <p id="status" class="status" role="status"></p>
+
+    <section id="result" hidden>
+      <div class="card who">
+        <div>
+          <div class="label">Employee</div>
+          <div id="who-name" class="value"></div>
+          <div id="who-meta" class="meta"></div>
+        </div>
+        <div class="balance">
+          <div class="label">Available</div>
+          <div><span id="available-days" class="big"></span> <span class="unit">days</span></div>
+          <div id="available-hours" class="meta"></div>
+        </div>
+      </div>
+
+      <p id="explanation" class="answer"></p>
+      <ul id="warnings" class="warnings"></ul>
+
+      <div class="card table-wrap">
+        <table><tbody id="facts"></tbody></table>
+      </div>
+
+      <details id="citations-details">
+        <summary>Handbook policy used</summary>
+        <div id="citations"></div>
+      </details>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

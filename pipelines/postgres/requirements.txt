@@ -1,0 +1,8 @@
+psycopg[binary]>=3.2
+azure-identity>=1.17
+azure-storage-blob>=12.20
+openai>=1.40
+cryptography>=43
+pypdf>=5.0
+databricks-sql-connector>=3.4
+databricks-sdk>=0.30

@@ -1,0 +1,26 @@
+{
+  "version": "handbook-2017-08",
+  "description": "Transcribed from the Employee Handbook, section V.B Vacation Benefits (1. Eligibility, 2. Accrual, 3. Administration). Reviewed by HR before each change.",
+  "handbook_doc_id": "employee-handbook-for-nonprofits-and-small-businesses",
+  "handbook_sha256": "879e811f84a8c8d0140a1f09679701444b3fac5d606b23c462a5466a54d9bba6",
+
+  "eligible_employment_types": ["FULL_TIME"],
+  "accrual_period_days": 14,
+  "hours_per_day": 8,
+  "tiers": [
+    { "min_years": 0,  "hours_per_period": 3.077, "max_days_per_year": 10 },
+    { "min_years": 5,  "hours_per_period": 4.62,  "max_days_per_year": 15 },
+    { "min_years": 10, "hours_per_period": 6.15,  "max_days_per_year": 20 }
+  ],
+  "fiscal_year_start_month": 1,
+  "cap_multiple": 2,
+  "waiting_period_days": 90,
+
+  "assumptions": [
+    "Regular full-time = employment_type FULL_TIME in the HR source; part-time and temporary employees are not eligible (V.B.1).",
+    "An 8-hour workday converts hours to days (3.077 h x 26 periods = 80 h = 10 days).",
+    "Biweekly periods are counted from the start date; the handbook does not tie them to a payroll calendar.",
+    "The handbook leaves [FISCAL YEAR] blank; fiscal_year_start_month = 1 (January) until HR sets it.",
+    "Eligibility is assumed to start on the start date (no record of classification changes)."
+  ]
+}

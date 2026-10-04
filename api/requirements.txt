@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic-settings>=2.4
+azure-identity>=1.17
+psycopg[binary]>=3.2
+psycopg-pool>=3.2
+openai>=1.40
+cryptography>=43

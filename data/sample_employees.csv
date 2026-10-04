@@ -1,0 +1,7 @@
+employee_id,first_name,last_name,email,start_date,employment_type,updated_at
+E1001,Avery,Morgan,avery.morgan@example.org,2014-03-17,FULL_TIME,2026-09-30T08:00:00Z
+E1002,Jordan,Lee,jordan.lee@example.org,2019-11-04,FULL_TIME,2026-09-30T08:00:00Z
+E1003,Sam,Rivera,sam.rivera@example.org,2023-06-12,FULL_TIME,2026-09-30T08:00:00Z
+E1004,Taylor,Kim,taylor.kim@example.org,2026-08-03,FULL_TIME,2026-09-30T08:00:00Z
+E1005,Riley,Chen,riley.chen@example.org,2022-01-10,PART_TIME,2026-09-30T08:00:00Z
+E1006,Casey,Patel,casey.patel@example.org,2026-11-02,FULL_TIME,2026-09-30T08:00:00Z
